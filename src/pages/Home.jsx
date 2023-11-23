@@ -1,8 +1,11 @@
 import React from 'react'
+import GetInTouch from '../components/GetInTouch/GetInTouch'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+        <GetInTouch />
+    </div>
   )
 }
 
