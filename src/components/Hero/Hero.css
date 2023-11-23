@@ -1,0 +1,19 @@
+.hero img {
+  width: 100%;
+  position: relative;
+  z-index: -10;
+}
+.hero h1 {
+  font-family: Oswald;
+  font-size: 10rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 22.4px;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 10;
+  top: 25rem;
+  -webkit-text-stroke: 2px #696969		;
+    color: transparent;
+}
