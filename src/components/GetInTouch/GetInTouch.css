@@ -1,6 +1,9 @@
 .get-in-touch {
   background: #f9f9f9;
-  padding: 5rem 10rem;
+  padding: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .get-in-touch-main {
   display: flex;
@@ -15,8 +18,8 @@
   font-weight: 400;
   line-height: 104%;
   letter-spacing: 2.55px;
-  text-transform: uppercase;
   max-width: 500px;
+  margin-right: 45rem;
 }
 
 .get-in-touch-offices {
@@ -121,3 +124,46 @@
 .get-in-touch form button:hover {
   scale: 1.1;
 }
+@media (max-width: 1400px) { 
+  .get-in-touch-main {
+    flex-direction: column;
+  }
+  .get-in-touch h1 {
+    margin-right: 10rem;
+  }
+}
+  @media (max-width: 768px) { 
+    .get-in-touch-offices{
+      flex-direction: column;
+    }
+    .get-in-touch form input{
+      width: 400px;
+    }
+    .get-in-touch h1{
+        font-size: 3rem;
+        letter-spacing: 1.2px;
+        margin-right: 0;
+    }
+  }
+  @media (max-width: 576px) { 
+    .get-in-touch form input{
+      width: 250px;
+    }
+    .get-in-touch form button{
+      scale: .8;
+    }
+    .get-in-touch-offices{
+      gap: 0;
+    }
+    .get-in-touch-offices{
+      scale: .95;
+    }
+    .get-in-touch-main{
+      gap: 1rem;
+    }
+    .get-in-touch h1{
+      text-align: center;
+      max-width: 290px;
+    }
+  }
+
