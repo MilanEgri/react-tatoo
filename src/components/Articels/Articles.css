@@ -1,5 +1,8 @@
 .articles {
-  padding: 5rem 6rem;
+  padding: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
 .articles-main{
     display: flex;
@@ -16,6 +19,7 @@
   letter-spacing: 2.55px;
   text-transform: uppercase;
   max-width: 500px;
+  display: block;
 }
 .article{
     cursor: pointer;
@@ -25,7 +29,7 @@
 .article-img-container {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start; /* If you want the content to be justified to the start */
+    justify-content: flex-start; 
     scale: 0.8;
 }
 .article-img-container img{
@@ -55,3 +59,30 @@
   line-height: 187%;
   letter-spacing: 0.28px;
 }
+@media (max-width: 1400px) { 
+  .articles{
+    scale: .9;
+  }
+}
+@media (max-width: 1200px) { 
+  .articles{
+    scale: 1;
+  }
+  .articles-main{
+    flex-direction: column;
+  }
+}
+@media (max-width: 992px) { 
+  
+}
+@media (max-width: 768px) { 
+  .articles h1{
+    scale: .9;
+  }
+}
+@media (max-width: 576px) { 
+  .articles {scale: .7;
+    padding: 0rem 0rem;}
+}
+
+
