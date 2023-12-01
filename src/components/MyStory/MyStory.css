@@ -1,0 +1,100 @@
+.myStory {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7rem;
+}
+
+.myStory-text {
+    padding-top: 5rem;
+}
+
+.myStory h1 {
+    color: #111;
+    font-family: Oswald;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 104%;
+    letter-spacing: 2.55px;
+    text-transform: uppercase;
+    max-width: 230px;
+
+}
+
+.myStory p {
+    color: #555;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 187%;
+    letter-spacing: 0.36px;
+    max-width: 530px;
+}
+.myStry-img-contanier{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.myStory img {
+    scale: .8;
+}
+
+.myStory button {
+    color: #111;
+
+    text-align: center;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.myStory button:hover{
+    scale: 1.1;
+}
+@media (max-width: 1400px) { 
+    .myStory{
+        scale: .9;
+    }
+}
+@media (max-width: 1200px) { 
+    .myStory{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3.5rem;
+    }
+    .myStory-text {
+        padding-top: 0;
+    }
+}
+@media (max-width: 992px) { 
+    .myStory img {
+        scale: .7;
+    }
+}
+@media (max-width: 768px) { 
+    .myStry-img-contanier{
+        max-width: 568px;
+        max-height: 568px;
+        overflow: hidden;
+    }
+}
+@media (max-width: 576px) { 
+    .myStry-img-contanier{
+        max-width: 320px;
+        max-height: 320px;
+        overflow: hidden;
+    }
+    .myStory img {
+        scale: .4.5;
+    }
+}
